@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto | Sitio de Arquitectura</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="links-container">
             <img src="../assets/images/logo.jpg" alt="logo de la empresa" class="logo">
-            <ul class="sections-list">
+            <ul class="list-items">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="section1.html">Proyectos</a></li>
-                <li><a href="section2.html">Sobre Mí</a></li>
-                <li><a href="section3.html">Contacto</a></li>
-                <li><a href="section4.html">FAQ</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="sobre mi.html">Sobre Mí</a></li>
+                <li id="active-page"><a href="contacto.html">Contacto</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="normal-main">
-        <h1>Contacto</h1>
-        <section>
+    <main class="main-content">
+        <div class="title-container">
+            <h1>Contacto</h1>
+        </div>
+        
+        <section id="contact-form-container">
             <form action="" method="post" name="form-contact-me" id="form-container">
                 <div>
                     <label for="form-name">Nombre</label>
@@ -61,10 +64,10 @@
         </section>
         <section id="links-container">
             <ul id="footer-links">
-                <li><a href="/index.html">Nuestros Servicios</a></li>
-                <li><a href="/pages/section2.html">¿Quiénes Somos?</a></li>
-                <li><a href="/pages/section3.html">Contacto</a></li>
-                <li><a href="/pages/section4.html">FAQ</a></li>
+                <li><a href="../index.html">Nuestros Servicios</a></li>
+                <li><a href="sobre mi.html">¿Quiénes Somos?</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </section>
     </footer>
