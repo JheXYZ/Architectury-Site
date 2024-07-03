@@ -1,6 +1,5 @@
 Sitio Web de Arquitectura
 
-
 Changelog:
 -Las paginas Home y Proyectos ahora son responsive soportando vista mobile, las demas lo soportan a medias (WIP)
 -El CSS fue reescrito para mayor claridad
