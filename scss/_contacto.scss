@@ -25,27 +25,26 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 20px;
-                // border: black 2px solid;
                 font-weight: 600;
             }
             input {
-                
                 border-radius: 20px;
-                // border: black 2px solid;
                 border-style: none;
                 padding-left: 10px;
                 
             }
             textarea {
                 border-radius: 20px;
-                // border: black 2px solid;
                 padding-left: 10px;
                 padding-top: 10px;
                 grid-row-start: span 2;
                 resize: none;
             }
-            
+            &:last-child {
+                grid-template-columns: 1fr;
+            }
         }
+        
     }
     #form-file {
         background-color: white;
@@ -54,20 +53,11 @@
     }
 
     #form-submit{ 
-        font-weight: 600;
+        display: flex;
         grid-column: 1 / -1;
-        cursor: pointer;
-        justify-content: center;
-        background-color: #09f;
-        color: white;
-        width: 100px;
         justify-self: center;
-        transition: 200ms;
-        border: #09f 2px solid;
-        &:hover {
-            border-color: #06F;
-            transform: scale(1.1);
-        }
+        width: fit-content;
+
     }
     
 }

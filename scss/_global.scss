@@ -31,3 +31,24 @@ body {
     text-align: center;
     color: white;
 }
+
+.button-1 {
+    border-radius: 20px;
+    background-color: #09f;
+    color: white;
+    padding: 10px;
+    border-style: none;
+    border: #09f 2px solid;
+    cursor: pointer;
+    transition: 200ms;
+    
+    &:hover {
+        border-color: #06f;
+        // transform: scale(1.1);
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+
+
+}

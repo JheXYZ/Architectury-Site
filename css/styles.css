@@ -34,6 +34,23 @@ body {
   color: white;
 }
 
+.button-1 {
+  border-radius: 20px;
+  background-color: #09f;
+  color: white;
+  padding: 10px;
+  border-style: none;
+  border: #09f 2px solid;
+  cursor: pointer;
+  transition: 200ms;
+}
+.button-1:hover {
+  border-color: #06f;
+}
+.button-1:active {
+  transform: scale(0.9);
+}
+
 header {
   margin: 5px;
 }
@@ -368,62 +385,56 @@ footer a:checked {
   grid-row-start: span 2;
   resize: none;
 }
+#contact-form-container form div:last-child {
+  grid-template-columns: 1fr;
+}
 #contact-form-container #form-file {
   background-color: white;
   align-content: center;
   justify-self: center;
 }
 #contact-form-container #form-submit {
-  font-weight: 600;
+  display: flex;
   grid-column: 1/-1;
-  cursor: pointer;
-  justify-content: center;
-  background-color: #09f;
-  color: white;
-  width: 100px;
   justify-self: center;
-  transition: 200ms;
-  border: #09f 2px solid;
-}
-#contact-form-container #form-submit:hover {
-  border-color: #06F;
-  transform: scale(1.1);
+  width: fit-content;
 }
 
 #search-bar-container {
   text-align: center;
 }
 #search-bar-container input {
-  border-radius: 10px;
+  border-radius: 20px;
   border: black 1px solid;
-  padding: 5px;
-}
-#search-bar-container button {
-  border: black 1px solid;
-  border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
+  border-style: none;
 }
 
-.article-container {
+.questions-container {
+  background-color: darkgray;
+  padding: 10px;
+  border-radius: 20px;
   color: black;
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   max-width: 1000px;
+  padding-inline: 10px;
   margin: 0 auto;
 }
-.article-container article {
+.questions-container article {
   background-color: white;
   border-radius: 20px;
-  width: 300px;
-}
-.article-container img {
-  height: 300px;
-  object-fit: cover;
   width: 100%;
-  border-radius: 20px;
+  padding: 10px;
+}
+.questions-container summary {
+  font-weight: bold;
+  font-size: large;
+}
+.questions-container p {
+  margin: 10px 10px 10px 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

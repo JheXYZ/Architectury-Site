@@ -2,36 +2,40 @@
     text-align: center;
     
     input {
-        border-radius: 10px;
+        border-radius: 20px;
         border: black 1px solid;
-        padding: 5px;
+        padding: 10px;
+        border-style: none;
     }
-    button {
-        border: black 1px solid;
-        border-radius: 10px;
-        padding: 5px;
-    }
+    
 }
 
-.article-container {
+.questions-container {
+    background-color: darkgray;
+    padding: 10px;
+    border-radius: 20px;
     color: black;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     max-width: 1000px;
+    padding-inline: 10px;
     margin: 0 auto;
-    
+
     article {
         background-color: white;
         border-radius: 20px;
-        width: 300px;
-    }
-    img {
-        height: 300px;
-        object-fit: cover;
         width: 100%;
-        border-radius: 20px;
+        padding: 10px;
     }
+    summary {
+        font-weight: bold;
+        font-size: large;
+    }
+    p {
+        margin: 10px 10px 10px 20px;
+    }
+
+
 }
