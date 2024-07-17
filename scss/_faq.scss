@@ -1,0 +1,37 @@
+#search-bar-container {
+    text-align: center;
+    
+    input {
+        border-radius: 10px;
+        border: black 1px solid;
+        padding: 5px;
+    }
+    button {
+        border: black 1px solid;
+        border-radius: 10px;
+        padding: 5px;
+    }
+}
+
+.article-container {
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    article {
+        background-color: white;
+        border-radius: 20px;
+        width: 300px;
+    }
+    img {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 20px;
+    }
+}

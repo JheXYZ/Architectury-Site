@@ -18,7 +18,7 @@ body {
   font-size: 1.5em;
   color: white;
 }
-@media (max-width: 426px) {
+@media (width <= 425px) {
   .title-container {
     font-size: 1em;
   }
@@ -162,15 +162,13 @@ footer a:checked {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-@media (max-width: 767px) {
-  #main-table .table-row {
-    grid-template-columns: 1fr;
-  }
-}
 #main-table .reverse {
   grid-row-start: 1;
 }
-@media (max-width: 767px) {
+@media (width < 768px) {
+  #main-table .table-row {
+    grid-template-columns: 1fr;
+  }
   #main-table .reverse {
     grid-row-start: 2;
   }
@@ -230,11 +228,7 @@ footer a:checked {
   max-width: 350px;
   border: 2px white solid;
 }
-@media (width >= 1400px) {
-  .image-article img {
-    max-width: 600px;
-  }
-}
+
 
 .elements-container {
   display: flex;
@@ -261,43 +255,44 @@ footer a:checked {
 }
 
 #about-me-container {
+  padding: 20px;
   display: flex;
+  border: white 2px solid;
   flex-wrap: wrap;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  padding: 10px;
   gap: 10px;
   max-width: 1000px;
   width: fit-content;
 }
-@media (width < 768px) {
-  #about-me-container {
-    flex-direction: column-reverse;
-  }
-}
-
-#about-me-image-container img {
+#about-me-container img {
+  width: 300px;
   border-radius: 20px;
-  max-width: 300px;
-  object-fit: cover;
-}
-@media (width < 768px) {
-  #about-me-image-container img {
-    height: 350px;
-    width: 350px;
-  }
 }
 
 #about-me-text-container {
-  background-color: white;
-  color: black;
+  color: white;
   padding: 20px;
+  border: white 2px solid;
   border-radius: 20px;
   width: 100%;
   max-width: 350px;
 }
 
+@media (width >= 1400px) {
+  .image-article img {
+    max-width: 600px;
+  }
+  #about-me-container {
+    max-width: 1500px;
+  }
+  #about-me-text-container {
+    max-width: 500px;
+  }
+}
 .article-container {
   color: black;
   text-align: center;
@@ -310,12 +305,12 @@ footer a:checked {
 }
 .article-container article {
   background-color: white;
+  border: black 2px solid;
   border-radius: 20px;
   width: 300px;
 }
 .article-container img {
-  height: 300px;
-  object-fit: cover;
+  height: 100%;
   width: 100%;
   border-radius: 20px;
 }
@@ -327,67 +322,8 @@ footer a:checked {
 }
 
 #contact-form-container {
-  background-color: darkgray;
-  border-radius: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px;
-}
-#contact-form-container form {
-  color: black;
-  display: grid;
-  background-color: gray;
-  padding: 10px;
-  border-radius: 20px;
-  gap: 10px;
-}
-#contact-form-container form div {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-auto-rows: 40px;
-  justify-content: center;
-  gap: 10px;
-}
-#contact-form-container form div label {
-  background-color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 20px;
-  font-weight: 600;
-}
-#contact-form-container form div input {
-  border-radius: 20px;
-  border-style: none;
-  padding-left: 10px;
-}
-#contact-form-container form div textarea {
-  border-radius: 20px;
-  padding-left: 10px;
-  padding-top: 10px;
-  grid-row-start: span 2;
-  resize: none;
-}
-#contact-form-container #form-file {
-  background-color: white;
-  align-content: center;
-  justify-self: center;
-}
-#contact-form-container #form-submit {
-  font-weight: 600;
-  grid-column: 1/-1;
-  cursor: pointer;
-  justify-content: center;
-  background-color: #09f;
-  color: white;
-  width: 100px;
-  justify-self: center;
-  transition: 200ms;
-  border: #09f 2px solid;
-}
-#contact-form-container #form-submit:hover {
-  border-color: #06F;
-  transform: scale(1.1);
 }
 
 #search-bar-container {
@@ -402,28 +338,6 @@ footer a:checked {
   border: black 1px solid;
   border-radius: 10px;
   padding: 5px;
-}
-
-.article-container {
-  color: black;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.article-container article {
-  background-color: white;
-  border-radius: 20px;
-  width: 300px;
-}
-.article-container img {
-  height: 300px;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

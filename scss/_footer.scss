@@ -1,0 +1,38 @@
+footer {
+    margin-top: 20px;
+    background-color: rgb(22, 67, 104);
+    display: flex;
+    justify-content: space-around;
+    min-width: 430px;
+    width: 100%;
+    
+    section {
+        margin: 10px;
+    }
+
+    #links-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    #footer-links {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    a {
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        
+        &:hover{
+            text-decoration: underline;
+        }
+        &:checked {
+            color: red;
+        }
+    }
+}

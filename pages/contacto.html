@@ -29,30 +29,30 @@
             <form action="" method="post" name="form-contact-me" id="form-container">
                 <div>
                     <label for="form-name">Nombre</label>
-                    <input type="text" id="form-name" placeholder="Nicolas">
+                    <input type="text" id="form-name" placeholder="Nicolas" required>
                 </div>
                 <div>
                     <label for="form-lastName">Apellido</label>
-                    <input type="text" id="form-lastName" placeholder="Rodriguez Briz">
+                    <input type="text" id="form-lastName" placeholder="Rodriguez Briz" required>
                 </div>
                 <div>
                     <label for="form-email">E-mail</label>
-                    <input type="email" id="form-email" placeholder="correoelectronico@email.com">
+                    <input type="email" id="form-email" placeholder="correoelectronico@email.com" required>
                 </div>
                 <div>
                     <label for="form-subject">Asunto</label>
-                    <input type="text" id="form-subject" placeholder="Titulo">
+                    <input type="text" id="form-subject" placeholder="Titulo" required>
                 </div>
                 <div>
                     <label for="form-name">Contenido</label>
-                    <input type="text" id="form-body" placeholder="Descripcion del asunto a tratar">
+                    <textarea id="form-body" placeholder="Descripción del asunto a tratar" required></textarea>
                 </div>
                 <div>
                     <label for="form-file">Archivos</label>
                     <input type="file" id="form-file">
                 </div>
                 <div>
-                    <input type="submit">
+                    <input type="submit" id="form-submit">
                 </div>
             </form>
         </section>
