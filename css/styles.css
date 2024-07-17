@@ -18,7 +18,7 @@ body {
   font-size: 1.5em;
   color: white;
 }
-@media (max-width: 426px) {
+@media (width <= 425px) {
   .title-container {
     font-size: 1em;
   }
@@ -74,6 +74,7 @@ header nav ul li {
   border-right: 0;
   padding-inline: 10px;
   backdrop-filter: blur(5px);
+  transition: 200ms;
 }
 header nav ul li:first-child {
   border-radius: 20px 0 0 20px;

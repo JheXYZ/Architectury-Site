@@ -17,7 +17,7 @@ body {
     text-align: center;
     font-size: 1.5em;
     color: white;
-    @media (max-width: 426px){
+    @media (width <= 425px){
         font-size: 1em;
     }
 }    
