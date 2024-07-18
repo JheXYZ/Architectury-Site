@@ -23,6 +23,7 @@
         align-items: flex-start;
         margin-bottom: 5%;
         margin-left: 10%;
+        margin-right: 10%;
 
         h3, p {
             font-size: x-large;
@@ -40,6 +41,7 @@
                 font-size: 1em;
             }
         }
+        
     }
 }
 
@@ -67,6 +69,9 @@
     }
     .reverse-text {
         text-align: right;
+        p {
+            margin-right: 10px;
+        }
     }
     
     .main-table-text {
@@ -77,6 +82,9 @@
         * {
             margin: 0;
         }
+        p {
+            margin-left: 10px;
+        }
     }
     
     .main-table-image {
@@ -84,12 +92,15 @@
 
         // border: green 1px solid;
         img {
-            filter: blur(5px);
+            filter: blur(2px);
             width: 100%;
             height: 200px;
             object-fit: cover;
             border-radius: 30px;
         }
+    }
+    .zoom-top{
+        object-position: top;
     }
     
 }
