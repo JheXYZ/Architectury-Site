@@ -446,6 +446,7 @@ footer a:checked {
 .questions-container summary {
   font-weight: bold;
   font-size: large;
+  cursor: pointer;
 }
 .questions-container p {
   margin: 10px 10px 10px 20px;
