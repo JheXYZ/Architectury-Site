@@ -315,16 +315,14 @@ footer a:checked {
 
 #about-me-container {
   display: flex;
-  flex-wrap: wrap;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   gap: 10px;
-  max-width: 1000px;
-  width: fit-content;
+  padding-inline: 10px;
 }
-@media (width < 768px) {
+@media (width <= 768px) {
   #about-me-container {
     flex-direction: column-reverse;
   }
@@ -333,12 +331,15 @@ footer a:checked {
 #about-me-image-container img {
   border-radius: 20px;
   max-width: 300px;
+  width: max-content;
+  height: 100%;
+  object-position: top;
   object-fit: cover;
 }
-@media (width < 768px) {
+@media (width <= 768px) {
   #about-me-image-container img {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
   }
 }
 
@@ -346,9 +347,16 @@ footer a:checked {
   background-color: white;
   color: black;
   padding: 20px;
+  max-width: 550px;
   border-radius: 20px;
-  width: 100%;
-  max-width: 350px;
+}
+#about-me-text-container * {
+  margin: 0;
+}
+@media (width <= 768px) {
+  #about-me-text-container {
+    max-width: 100%;
+  }
 }
 
 .article-container {
@@ -360,6 +368,7 @@ footer a:checked {
   gap: 10px;
   max-width: 1000px;
   margin: 0 auto;
+  padding-inline: 10px;
 }
 .article-container article {
   background-color: white;

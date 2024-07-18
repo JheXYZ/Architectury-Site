@@ -1,17 +1,12 @@
 #about-me-container{
-    // padding: 20px;
     display: flex;
-    // border: white 2px solid;
-    flex-wrap: wrap;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    // padding: 10px;
     gap: 10px;
-    max-width: 1000px;
-    width: fit-content;
-    @media(width < 768px) {
+    padding-inline: 10px;
+    @media(width <= 768px) {
         flex-direction: column-reverse;
     }
 }
@@ -20,10 +15,13 @@
     img{
         border-radius: 20px;
         max-width: 300px;
+        width: max-content;
+        height: 100%;
+        object-position: top;
         object-fit: cover;
-        @media (width < 768px) {
-            height: 350px;
-            width: 350px;
+        @media (width <= 768px) {
+            height: 300px;
+            width: 300px;
         }
     }
 }
@@ -32,10 +30,15 @@
     background-color: white;
     color: black;
     padding: 20px;
-    // border: white 2px solid;
+    max-width: 550px;
     border-radius: 20px;
-    width: 100%;
-    max-width: 350px;
+    * {
+        margin: 0;
+    }
+    @media (width <= 768px) {
+        max-width: 100%;
+    }
+    
 }
 
 .article-container{
@@ -47,6 +50,7 @@
     gap: 10px;
     max-width: 1000px;
     margin: 0 auto;
+    padding-inline: 10px;
 
     article{
         background-color: white;
