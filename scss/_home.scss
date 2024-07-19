@@ -1,3 +1,14 @@
+#home-title-container {
+    h1, h3 {
+        font-weight: 400;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    span {
+        color: red;
+    }
+}
 .main-image-container {
     // grid-area: 1 / 1 / 2 / 2;
     display: grid;
@@ -75,9 +86,9 @@
     }
     
     .main-table-text {
-        border: white 2px solid;
+        background-color: #777;
         border-radius: 30px;
-        padding: 10px;
+        padding: 20px;
         align-content: center;
         * {
             margin: 0;

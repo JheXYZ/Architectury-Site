@@ -8,15 +8,26 @@ body {
 }
 
 .logo {
+  background-color: white;
+  height: 100%;
   width: 100px;
   min-width: 40px;
+  min-height: 40px;
+  object-fit: cover;
+  padding: 2px;
   border-radius: 30px;
 }
 
 .title-container {
+  background-color: #777;
+  margin-bottom: 20px;
+  padding-block: 20px;
   text-align: center;
   font-size: 1.5em;
   color: white;
+}
+.title-container * {
+  margin: 0;
 }
 @media (width <= 425px) {
   .title-container {
@@ -139,6 +150,16 @@ footer a:checked {
   color: red;
 }
 
+#home-title-container h1, #home-title-container h3 {
+  font-weight: 400;
+}
+#home-title-container h3 {
+  font-size: 1em;
+}
+#home-title-container span {
+  color: red;
+}
+
 .main-image-container {
   display: grid;
 }
@@ -214,9 +235,9 @@ footer a:checked {
   margin-right: 10px;
 }
 #main-table .main-table-text {
-  border: white 2px solid;
+  background-color: #777;
   border-radius: 30px;
-  padding: 10px;
+  padding: 20px;
   align-content: center;
 }
 #main-table .main-table-text * {
@@ -313,6 +334,10 @@ footer a:checked {
   margin: 10px 20px;
 }
 
+#about-me-outer-container {
+  margin-inline: 10px;
+}
+
 #about-me-container {
   display: flex;
   border-radius: 20px;
@@ -320,7 +345,9 @@ footer a:checked {
   justify-content: center;
   margin: 0 auto;
   gap: 10px;
-  padding-inline: 10px;
+  width: fit-content;
+  padding: 10px;
+  background-color: #777;
 }
 @media (width <= 768px) {
   #about-me-container {
@@ -353,6 +380,9 @@ footer a:checked {
 #about-me-text-container * {
   margin: 0;
 }
+#about-me-text-container p {
+  text-indent: 20px;
+}
 @media (width <= 768px) {
   #about-me-text-container {
     max-width: 100%;
@@ -371,21 +401,31 @@ footer a:checked {
   padding-inline: 10px;
 }
 .article-container article {
+  height: fit-content;
   background-color: white;
   border-radius: 20px;
   width: 300px;
 }
-.article-container img {
+.article-container .image-container {
+  display: flex;
+  align-items: center;
   height: 300px;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 20px;
+  width: 300px;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  overflow: hidden;
 }
-
-.article-title-container h3 {
+.article-container .image-container img {
+  width: 300px;
+}
+.article-container h3 {
   margin: 0;
   padding: 10px;
   border-radius: 20px;
+}
+.article-container p {
+  margin: 0;
+  padding: 0 10px 10px 10px;
 }
 
 #contact-form-container {
