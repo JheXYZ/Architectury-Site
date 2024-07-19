@@ -307,6 +307,7 @@ footer a:checked {
   max-width: 1000px;
   width: 100%;
   min-width: 350px;
+  max-height: 1000px;
 }
 
 .elements-container-2 {
