@@ -1,19 +1,22 @@
 #home-title-container {
-    h1, h3 {
+
+    h1,
+    h3 {
         font-weight: 400;
     }
+
     h3 {
         font-size: 1em;
     }
+
     span {
         color: red;
     }
 }
+
 .main-image-container {
-    // grid-area: 1 / 1 / 2 / 2;
     display: grid;
-    // margin: 0 5px 0 5px;
-    
+
     img {
         grid-row: 1 / 1;
         grid-column: 1 / 1;
@@ -25,7 +28,6 @@
     }
 
     div {
-        // border: darkolivegreen 1px solid;
         display: flex;
         grid-row: 1 / 1;
         grid-column: 1 / 1;
@@ -36,7 +38,8 @@
         margin-left: 10%;
         margin-right: 10%;
 
-        h3, p {
+        h3,
+        p {
             font-size: x-large;
             border-bottom: 5px gray solid;
             border-left: 5px gray solid;
@@ -45,14 +48,16 @@
             backdrop-filter: blur(5px);
             color: white;
             text-shadow: #000 1px 0 10px;
-            @media (width <= 768px) {
-                font-size:large;
+
+            @media (width <=768px) {
+                font-size: large;
             }
-            @media (width <= 425px) {
+
+            @media (width <=425px) {
                 font-size: 1em;
             }
         }
-        
+
     }
 }
 
@@ -63,7 +68,6 @@
     gap: 20px;
 
     .table-row {
-        // border: black 1px solid;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -72,32 +76,38 @@
             grid-template-columns: 1fr;
         }
     }
+
     .reverse {
         grid-row-start: 1;
+
         @media (max-width: 767px) {
             grid-row-start: 2;
         }
     }
+
     .reverse-text {
         text-align: right;
+
         p {
             margin-right: 10px;
         }
     }
-    
+
     .main-table-text {
         background-color: #777;
         border-radius: 30px;
         padding: 20px;
         align-content: center;
+
         * {
             margin: 0;
         }
+
         p {
             margin-left: 10px;
         }
     }
-    
+
     .main-table-image {
         align-self: center;
 
@@ -110,10 +120,9 @@
             border-radius: 30px;
         }
     }
-    .zoom-top{
+
+    .zoom-top {
         object-position: top;
     }
-    
+
 }
-
-

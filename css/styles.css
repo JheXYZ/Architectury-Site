@@ -150,7 +150,8 @@ footer a:checked {
   color: red;
 }
 
-#home-title-container h1, #home-title-container h3 {
+#home-title-container h1,
+#home-title-container h3 {
   font-weight: 400;
 }
 #home-title-container h3 {
@@ -183,7 +184,8 @@ footer a:checked {
   margin-left: 10%;
   margin-right: 10%;
 }
-.main-image-container div h3, .main-image-container div p {
+.main-image-container div h3,
+.main-image-container div p {
   font-size: x-large;
   border-bottom: 5px gray solid;
   border-left: 5px gray solid;
@@ -194,12 +196,14 @@ footer a:checked {
   text-shadow: #000 1px 0 10px;
 }
 @media (width <= 768px) {
-  .main-image-container div h3, .main-image-container div p {
+  .main-image-container div h3,
+  .main-image-container div p {
     font-size: large;
   }
 }
 @media (width <= 425px) {
-  .main-image-container div h3, .main-image-container div p {
+  .main-image-container div h3,
+  .main-image-container div p {
     font-size: 1em;
   }
 }
