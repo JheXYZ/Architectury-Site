@@ -262,6 +262,11 @@ footer a:checked {
   grid-template-rows: 1fr;
   gap: 20px;
 }
+@media (width <= 425px) {
+  #main-table {
+    margin-inline: 10px;
+  }
+}
 #main-table .table-row {
   display: grid;
   grid-template-columns: 1fr 1fr;

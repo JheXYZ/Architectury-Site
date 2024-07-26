@@ -76,6 +76,9 @@
     display: grid;
     grid-template-rows: 1fr;
     gap: 20px;
+    @media (width <= 425px){
+        margin-inline: 10px;
+    }
 
     .table-row {
         display: grid;
