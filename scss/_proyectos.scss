@@ -22,7 +22,6 @@
 .project-image-title-container {
     display: flex;
     flex-direction: column;
-    // border: white 2px solid;
     background-color: darkgray;
     border-radius: 20px;
     max-width: 1000px;
@@ -33,18 +32,15 @@
         text-align: center;
         margin: 0;
         padding: 5px 20px;
-        // border: white 2px solid;
-        // background-color: #777;
         border-radius: 20px 20px 0 0;
         border-bottom: 0;
-        // max-width: min(80%, 500px);
     }
 
     img {
         border-radius: 20px;
         max-width: 1000px;
         width: 100%;
-        min-width: 350px;
+        // min-width: 350px;
         max-height: 1000px;
     }
 }
@@ -58,16 +54,15 @@
 
     div {
         background-color: white;
-        width: 300px;
+        max-width: 300px;
         border-radius: 20px;
-        // border: black 2px solid;
+
         @media (width <= 768px) {
             width: 100%;
         }
     }
 
     h3 {
-        // border: black 2px solid;
         background-color: darkgray;
         color: white;
         border-radius: 20px;

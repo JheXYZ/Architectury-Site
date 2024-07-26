@@ -28,7 +28,7 @@
 
     <main>
         <section id="contact-form-container">
-            <form name="form-contact-me" id="form-container">
+            <form name="form-contact-me">
                 <div>
                     <label for="form-name">Nombre</label>
                     <input type="text" id="form-name" placeholder="Nicolas" required>
@@ -50,8 +50,12 @@
                     <textarea spellcheck="true" placeholder="Descripción del asunto a tratar" required></textarea>
                 </div>
                 <div>
-                    <label for="form-file">Archivos</label>
-                    <input type="file" id="form-file">
+                    <span>Archivos</span>
+                    <label id="custom-form-file" class="button-1">
+                        <span><img src="../assets/images/file.png"></img></span>
+                        Subír archivo
+                        <input type="file" accept=".png, .jpg, .jpeg, .pdf" multiple>
+                    </label>
                 </div>
                 <div>
                     <button type="submit" id="form-submit" class="button-1">Enviar</button>

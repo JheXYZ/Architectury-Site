@@ -359,7 +359,6 @@ footer a:checked {
   border-radius: 20px;
   max-width: 1000px;
   width: 100%;
-  min-width: 350px;
   max-height: 1000px;
 }
 
@@ -372,7 +371,7 @@ footer a:checked {
 }
 .elements-container-2 div {
   background-color: white;
-  width: 300px;
+  max-width: 300px;
   border-radius: 20px;
 }
 @media (width <= 768px) {
@@ -489,19 +488,18 @@ footer a:checked {
 }
 
 #contact-form-container {
-  background-color: darkgray;
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
-  max-width: 1000px;
-  margin: 10px auto;
-  padding: 10px;
+  margin: 10px;
 }
 #contact-form-container form {
   color: black;
   display: grid;
-  background-color: gray;
+  background-color: darkgray;
   padding: 10px;
   border-radius: 20px;
-  gap: 10px;
+  gap: 20px;
 }
 #contact-form-container form div {
   display: grid;
@@ -510,18 +508,29 @@ footer a:checked {
   justify-content: center;
   gap: 10px;
 }
-#contact-form-container form div label {
+#contact-form-container form div label, #contact-form-container form div span {
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
   font-weight: 600;
+  padding-inline: 10px;
+  width: 70px;
+}
+@media (width <= 425px) {
+  #contact-form-container form div label, #contact-form-container form div span {
+    justify-content: initial;
+    width: fit-content;
+  }
 }
 #contact-form-container form div input {
   border-radius: 20px;
   border-style: none;
   padding-left: 10px;
+}
+#contact-form-container form div input[type=file] {
+  display: none;
 }
 #contact-form-container form div textarea {
   border-radius: 20px;
@@ -533,10 +542,37 @@ footer a:checked {
 #contact-form-container form div:last-child {
   grid-template-columns: 1fr;
 }
-#contact-form-container #form-file {
+@media (width <= 425px) {
+  #contact-form-container form div {
+    grid-template-columns: 1fr;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+@media (width <= 425px) {
+  #contact-form-container form {
+    width: 100%;
+  }
+}
+#contact-form-container #custom-form-file {
   background-color: white;
+  min-width: max-content;
+  color: black;
+  display: flex;
+  gap: 10px;
   align-content: center;
   justify-self: center;
+  padding-inline: 10px;
+}
+#contact-form-container #custom-form-file span {
+  background: none;
+  max-height: 40px;
+  max-width: max-content;
+  padding-inline: 0;
+}
+#contact-form-container #custom-form-file img {
+  max-height: 30px;
 }
 #contact-form-container #form-submit {
   display: flex;
