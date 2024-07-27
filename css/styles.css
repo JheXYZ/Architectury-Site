@@ -43,8 +43,15 @@ body {
 }
 
 .text-container {
+  background-color: #555;
+  border-radius: 20px;
+  margin: 10px auto;
+  width: fit-content;
   text-align: center;
   color: white;
+}
+.text-container h2 {
+  padding: 10px;
 }
 
 .button-1 {
@@ -101,7 +108,7 @@ header nav ul {
 }
 header nav ul button {
   height: 40px;
-  background-color: gray;
+  background-color: #555;
   border: white 1px solid;
   color: white;
   font-weight: bold;
@@ -247,7 +254,7 @@ footer a:checked {
   .main-image-container div p {
     font-size: 1em;
     backdrop-filter: none;
-    background-color: #777;
+    background-color: #666;
     border-radius: 10px;
     border: none;
     gap: 10px;
@@ -292,7 +299,7 @@ footer a:checked {
   margin-right: 10px;
 }
 #main-table .main-table-text {
-  background-color: #777;
+  background-color: #555;
   border-radius: 30px;
   padding: 20px;
   align-content: center;
@@ -342,7 +349,7 @@ footer a:checked {
 .project-image-title-container {
   display: flex;
   flex-direction: column;
-  background-color: darkgray;
+  background-color: #555;
   border-radius: 20px;
   max-width: 1000px;
   height: fit-content;
@@ -380,7 +387,7 @@ footer a:checked {
   }
 }
 .elements-container-2 h3 {
-  background-color: darkgray;
+  background-color: #555;
   color: white;
   border-radius: 20px;
   margin: -2px;
@@ -508,7 +515,8 @@ footer a:checked {
   justify-content: center;
   gap: 10px;
 }
-#contact-form-container form div label, #contact-form-container form div span {
+#contact-form-container form div label,
+#contact-form-container form div span {
   background-color: white;
   display: flex;
   align-items: center;
@@ -519,7 +527,8 @@ footer a:checked {
   width: 70px;
 }
 @media (width <= 425px) {
-  #contact-form-container form div label, #contact-form-container form div span {
+  #contact-form-container form div label,
+  #contact-form-container form div span {
     justify-content: initial;
     width: fit-content;
   }

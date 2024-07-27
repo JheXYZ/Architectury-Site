@@ -1,7 +1,7 @@
 #search-bar-container {
     margin-top: 10px;
     text-align: center;
-    
+
     input {
         border-radius: 20px;
         border: black 1px solid;
@@ -29,11 +29,13 @@
         width: 100%;
         padding: 10px;
     }
+
     summary {
         font-weight: bold;
         font-size: large;
         cursor: pointer;
     }
+
     p {
         margin: 10px 10px 10px 20px;
     }

@@ -20,7 +20,6 @@
         grid-row: 1 / 1;
         grid-column: 1 / 1;
         width: 100%;
-        // min-width: 425px;
         max-height: 100vh;
         object-fit: cover;
         z-index: -1;
@@ -59,7 +58,7 @@
             @media (width <=425px) {
                 font-size: 1em;
                 backdrop-filter: none;
-                background-color: #777;
+                background-color: #666;
                 border-radius: 10px;
                 border: none;
                 gap: 10px;
@@ -107,7 +106,7 @@
     }
 
     .main-table-text {
-        background-color: #777;
+        background-color: #555;
         border-radius: 30px;
         padding: 20px;
         align-content: center;
@@ -124,7 +123,6 @@
     .main-table-image {
         align-self: center;
 
-        // border: green 1px solid;
         img {
             filter: blur(2px);
             width: 100%;
